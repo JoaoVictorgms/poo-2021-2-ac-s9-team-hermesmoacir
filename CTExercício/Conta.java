@@ -1,12 +1,12 @@
 public class Conta {
-    private int numero;
-    private String nome_titular;
-    private double saldo;
+    int numero;
+    String nome_titular;
+    double saldo;
 
-    void abrirConta(int numero, String nome, double saldo) {
+    public void abrirConta(int numero, String nome_titular, double valor) {
         this.numero = numero;
-        this.nome_titular = nome;
-        this.saldo = saldo;
+        this.nome_titular = nome_titular;
+        this.saldo = valor;
     }
 
     void depositar(double valor) {
